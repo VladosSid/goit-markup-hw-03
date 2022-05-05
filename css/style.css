@@ -104,10 +104,14 @@ p {
 }
 /* Тело главной страницы */
 /* Превью с заголовком */
+.primery {
+    background-color: #2F303A;
+    margin-bottom: 94px;
+}
+
 .primery .primery-text {
     color: var(--color-white-text);
-    /* Фон временный, что было видно текст */
-    background-color: black;
+
 
     font-weight: 900;
     font-size: 44px;
@@ -129,11 +133,17 @@ p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
     
     cursor: pointer;
 }
 
 /* Особенности */
+.feature {
+    margin-bottom: 94px;
+}
+
 .feature-title {
     font-weight: 700;
     font-size: 14px;
@@ -143,7 +153,7 @@ p {
     margin-bottom: 10px;
 }
 
-.feature .feature-text {
+.feature-list .feature-text {
     color: var(--secondary-text-color); 
     
     font-weight: 400;
@@ -153,23 +163,49 @@ p {
 
 /* Предоставляемые услуги */
 .services {
+    margin-bottom: 94px;
+}
+
+.services-title {
     margin-bottom: 50px;
 }
 
 /* Наша команда */
-.team .team-name {
+.team {
+    background-color: #F5F4FA;
+    padding: 94px 0px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
+.container-team {
+    width: 270px;
+    height: 368px;
+    background-color: var(--color-white-text);
+}
+
+.photo-team{
+    margin-bottom: 30px;     
+ }
+
+.container-team .team-name {
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
+    margin-bottom: 10px;
 }
-.team .profesion {
+
+.team-list .profesion {
     color: var(--secondary-text-color);
     
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Футер */
