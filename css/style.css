@@ -1,0 +1,200 @@
+/* Цвет основного текста #212121
+цвет вторичного текста #757575
+белый цвет #FFFFFF
+цвет лого #000000
+Акцент  #2196F3
+ цвет контактов rgba(255, 255, 255, 0.6)
+ фон цвета фильтра #F5F4FA*/
+
+ :root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --color-white-text: #FFFFFF;
+    --logo-color: #000000;
+    --accent-color: #2196F3;
+    --font-color-filtr: #F5F4FA;
+    --contact-in-footer: rgba(255, 255, 255, 0.6);
+}
+/* Главная старинца "Студия" */
+/* Тело сайта */
+body {
+    background-color: var(--color-white-text);
+    color: var(--primary-text-color);
+    
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+/* Шапка сайта */
+/* Логотип */
+.logo {
+    color: var(--logo-color);
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.logo.color-f {
+    color: var(--color-white-text);
+}
+
+.logo span {
+    color: var(--accent-color);    
+}
+/* Меню */
+.menu,
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.menu .link {
+    color: var(--primary-text-color);   
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    color: var(--accent-color);
+} 
+
+.menu .link.carrent {
+    color: var(--accent-color);
+}
+/* Контакты */
+.contacts a {
+    color: var(--secondary-text-color);    
+}
+
+.contacts .contacts-company:hover,
+.contacts .contacts-company:focus,
+.contact-in-footer:hover,
+.contact-in-footer:focus {
+    color: var(--accent-color);
+}
+/* Тело главной страницы */
+/* Превью с заголовком */
+.primery .primery-text {
+    color: var(--color-white-text);
+    /* Фон временный, что было видно текст */
+    background-color: black;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.primery .order-service {
+    color: var(--color-white-text);
+    background-color: var(--accent-color);    
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    cursor: pointer;
+}
+
+/* Особенности */
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.feature .feature-text {
+    color: var(--secondary-text-color); 
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;    
+}
+
+/* Предоставляемые услуги */
+
+
+/* Наша команда */
+.team .team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+.team .profesion {
+    color: var(--secondary-text-color);
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Футер */
+/* Фон временный, что было видно текст */
+footer {
+    background-color: black;
+}
+
+.locatyon {
+    color: var(--color-white-text);
+}
+/* Контакты в подвале */
+.contact-in-footer {
+    color: var(--contact-in-footer);
+}
+
+
+/* Стилизация Портфолио */
+/* Тело сайта */
+/* Фильтр */
+.filter {
+    color: var(--primary-text-color);
+    background-color: var(--font-color-filtr);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.filter-menu:hover,
+.felter-menu:focus {
+    color: var(--color-white-text);
+    background-color: var(--accent-color);
+
+}
+/* Список проэктов */
+.project-list .name-project {
+    color: var(--primary-text-color);
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-list .product {
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9px;
+}
