@@ -12,7 +12,7 @@
     --color-white-text: #FFFFFF;
     --logo-color: #000000;
     --accent-color: #2196F3;
-    --font-color-filtr: #F5F4FA;
+    --font-color-filter: #F5F4FA;
     --contact-in-footer: rgba(255, 255, 255, 0.6);
 }
 
@@ -151,16 +151,6 @@ p {
     border-radius: 4px;
 }
 
-.primery-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-
 /* Особенности */
 .feature {
     margin-bottom: 94px;
@@ -260,24 +250,43 @@ p {
 /* Стилизация Портфолио */
 /* Тело сайта */
 /* Фильтр */
-.filter {
-    color: var(--primary-text-color);
-    background-color: var(--font-color-filtr);
-    
+.filter {    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
 
     cursor: pointer;
+
+    margin-bottom: 34px;
 }
 
 .filter-menu:hover,
 .felter-menu:focus {
     color: var(--color-white-text);
     background-color: var(--accent-color);
-
 }
+
+.filter-menu {
+    background-color: var(--font-color-filter);
+
+    border: 1px solid var(--font-color-filter);
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+
+.filter-button {
+    color: var(--primary-text-color);
+
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.filter-button.last-child {
+    margin-right: 0;
+}
+
 /* Список проэктов */
 .project-list .name-project {
     color: var(--primary-text-color);
