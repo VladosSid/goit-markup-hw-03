@@ -288,19 +288,40 @@ p {
 }
 
 /* Список проэктов */
+.project-container {
+    height: 404px;
+    width: 370px;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.img-portfolio {
+    margin-bottom: 20px;
+}
+
 .project-list .name-project {
+    /* display: inline-block; */
     color: var(--primary-text-color);
     
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    /* height: 36px; */
+    margin: 0 24px 4px 24px;
 }
 
 .project-list .product {
+    /* display: inline-block; */
     color: var(--secondary-text-color);
 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9px;
+
+    /* height: 30px; */
+    margin: 0 24px;
 }
