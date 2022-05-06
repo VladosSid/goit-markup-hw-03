@@ -16,7 +16,7 @@
     --contact-in-footer: rgba(255, 255, 255, 0.6);
 }
 
-}
+
 /* Главная старинца "Студия" */
 /* Тело сайта */
 body {
@@ -45,6 +45,7 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .container {
     width: 1200px;
     padding-right: 15px;
@@ -52,6 +53,7 @@ p {
     outline: 2px dashed red;
     margin: 0px auto;
 }
+
 /* Шапка сайта */
 /* Логотип */
 .logo {
@@ -210,16 +212,28 @@ p {
 
 /* Футер */
 /* Фон временный, что было видно текст */
-footer {
-    background-color: black;
+.section-footer {
+    background-color: #2F303A;
+    padding: 60px 0px;
+}
+
+.color-footer {
+    display: inline-block;
+ color: var(--color-white-text);
+ margin-bottom: 20px;
 }
 
 .locatyon {
     color: var(--color-white-text);
+    margin-bottom: 9px;
 }
 /* Контакты в подвале */
 .contact-in-footer {
     color: var(--contact-in-footer);
+}
+
+.contact-in-footer.mail {
+    margin-bottom: 9px;
 }
 
 
