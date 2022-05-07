@@ -53,6 +53,11 @@ p {
     padding-left: 15px;
     outline: 2px dashed red;
 }
+/* сброс отсутпов и точек в списках */
+.padding-list {
+    padding-left: 0;
+    list-style-type: none;
+}
 
 /* Шапка сайта */
 /* Логотип */
@@ -164,6 +169,10 @@ p {
     text-align: center;  
 }
 
+.primery-text .slogan {
+    display: block;
+}
+
 .primery .order-service {
     margin-left: auto;
     margin-right: auto;
@@ -190,7 +199,11 @@ p {
     margin-bottom: 94px;
 }
 
-.feature-title {
+.container .feature-list {
+    display: flex;
+}
+
+.feature-items .feature-title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -199,12 +212,20 @@ p {
     text-transform: uppercase;
 }
 
-.feature-list .feature-text {
+.feature-list .feature-text { 
     color: var(--secondary-text-color); 
     
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;    
+    line-height: 1.7;
+}
+
+.feature-list .feature-items {
+    width: 270px;
+}
+
+.feature-list .feature-items:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* Предоставляемые услуги */
@@ -216,6 +237,14 @@ p {
     margin-bottom: 50px;
 }
 
+.container .container-services {
+    display: flex;
+}
+
+.container-services .services-img:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* Наша команда */
 .team {
     padding: 94px 0px;
@@ -223,28 +252,37 @@ p {
     background-color: #F5F4FA;
 }
 
-.team-title {
+.container .team-title {
     margin-bottom: 50px;
 }
 
-.container-team {
+.team-list .container-team {
     width: 270px;
     height: 368px;
 
     background-color: var(--color-white-text);
 }
 
-.photo-team{
+.container .team-list {
+    display: flex;
+}
+
+.team-list .team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.container-team .photo-team {
     margin-bottom: 30px;     
  }
 
 .container-team .team-name {
-    display: inline-block;
     margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+
+    text-align: center;
 }
 
 .team-list .profesion {
