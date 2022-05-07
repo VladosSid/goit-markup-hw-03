@@ -267,7 +267,7 @@ margin-right: 0;
 /* Стилизация Портфолио */
 /* Тело сайта */
 /* Фильтр */
-.filter {    
+.filter {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -293,6 +293,7 @@ margin-right: 0;
 }
 
 .filter-button {
+    display: block;
     color: var(--primary-text-color);
 
     display: inline-block;
