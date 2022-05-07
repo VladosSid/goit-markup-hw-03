@@ -304,9 +304,10 @@ p {
     background-color: #2F303A;
 }
 
-.color-footer {
+.container .color-footer {
     display: inline-block;
     margin-bottom: 20px;
+    margin-right: 0;
 
     color: var(--color-white-text);
 }
@@ -317,6 +318,7 @@ p {
 }
 /* Контакты в подвале */
 .contact-in-footer {
+    display: block;
     color: var(--contact-in-footer);
     text-decoration: none; 
     font-style: normal;   
@@ -330,21 +332,26 @@ p {
 /* Стилизация Портфолио */
 /* Тело сайта */
 /* Фильтр */
+.mine-portfolio {
+    margin: 94px 0;
+}
+
 .filter {
+    display: flex;
+    justify-content: center;
     margin-bottom: 34px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-
-    cursor: pointer;
 }
 
 .filter-menu:hover,
 .felter-menu:focus {
     color: var(--color-white-text);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .filter-menu {
@@ -356,26 +363,29 @@ p {
     border-radius: 4px;
 }
 
-.filter-button {
-    display: block;
-    margin-left: 0;
+.filter .filter-button:not(:last-child) {
     margin-right: 8px;
-
-    color: var(--primary-text-color);
-}
-
-.filter-button.last-child {
-    margin-right: 0;
 }
 
 /* Список проэктов */
+.container .project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .project-container {
-    margin-right: 30px;
-    margin-bottom: 30px;
     height: 404px;
     width: 370px;
 
     border: 1px solid #EEEEEE;
+}
+
+.project-list .project-container:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.project-list .project-container:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
 }
 
 .img-portfolio {
