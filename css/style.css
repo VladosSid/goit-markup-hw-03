@@ -67,6 +67,7 @@ p {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1;
+    text-decoration: none;
 }
 
 .logo.color-f {
@@ -83,10 +84,13 @@ p {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    list-style-type: none;
 }
 
 .menu .link {
-    color: var(--primary-text-color);   
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin-right: 50px;
 }
 
 .menu .link:hover,
@@ -102,12 +106,23 @@ p {
     color: var(--secondary-text-color);    
 }
 
+.contacts-company {
+    text-decoration: none;
+    margin-right: 50px;
+}
+
 .contacts .contacts-company:hover,
 .contacts .contacts-company:focus,
 .contact-in-footer:hover,
 .contact-in-footer:focus {
     color: var(--accent-color);
 }
+
+.link.last-child,
+.contacts-company.last-child {
+margin-right: 0;
+}
+
 /* Тело главной страницы */
 /* Превью с заголовком */
 .primery {
@@ -240,6 +255,8 @@ p {
 /* Контакты в подвале */
 .contact-in-footer {
     color: var(--contact-in-footer);
+    text-decoration: none; 
+    font-style: normal;   
 }
 
 .contact-in-footer.mail {
