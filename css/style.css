@@ -392,11 +392,16 @@ p {
     margin-bottom: 20px;
 }
 
-.project-list .name-project {
-    /* display: inline-block; */
-    /* height: 36px; */
-    margin: 0 24px 4px 24px;
+.class-project {
+    height: 70px;
 
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 0 24px;
+}
+
+.project-list .name-project {
     color: var(--primary-text-color);
     
     font-weight: 700;
@@ -406,13 +411,9 @@ p {
 }
 
 .project-list .product {
-    /* display: inline-block; */
-    /* height: 30px; */
-    margin: 0 24px;
-
     color: var(--secondary-text-color);
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.9px;
+    line-height: 1.9;
 }
