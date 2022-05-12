@@ -271,7 +271,6 @@ p {
 
 .team-list .container-team {
     width: 270px;
-    height: 368px;
 
     background-color: var(--color-white-text);
 }
@@ -389,8 +388,6 @@ p {
 .project-container {
     height: 404px;
     width: 370px;
-
-    border: 1px solid #EEEEEE;
 }
 
 .project-list .project-container:not(:nth-child(3n)) {
@@ -412,6 +409,10 @@ p {
     flex-direction: column;
     align-content: space-between;
     margin: 0 24px;
+
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .project-list .name-project {
