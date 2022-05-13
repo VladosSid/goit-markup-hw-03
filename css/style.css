@@ -6,7 +6,7 @@
  цвет контактов rgba(255, 255, 255, 0.6)
  фон цвета фильтра #F5F4FA*/
 
- :root {
+:root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --color-white-text: #FFFFFF;
@@ -22,10 +22,11 @@
 body {
     background-color: var(--color-white-text);
     color: var(--primary-text-color);
-    
+
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -33,13 +34,13 @@ h2 {
     text-align: center;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-ul, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
 li,
 p {
     margin-top: 0;
@@ -53,6 +54,7 @@ p {
     padding-left: 15px;
     outline: 2px dashed red;
 }
+
 /* сброс отсутпов и точек в списках */
 .padding-list {
     padding-left: 0;
@@ -80,7 +82,7 @@ p {
     margin-right: 93px;
 
     color: var(--logo-color);
-    
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -93,8 +95,9 @@ p {
 }
 
 .logo .accent-logo {
-    color: var(--accent-color);    
+    color: var(--accent-color);
 }
+
 /* Меню */
 .container .menu,
 .container .contacts {
@@ -125,17 +128,18 @@ p {
 .menu .link:hover,
 .menu .link:focus {
     color: var(--accent-color);
-} 
+}
 
 .menu .link.carrent {
     color: var(--accent-color);
 }
+
 /* Контакты */
 .contacts .contacts-company {
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);
 }
 
-.contacts-company {  
+.contacts-company {
     text-decoration: none;
 }
 
@@ -166,7 +170,7 @@ p {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
 }
 
 .primery-text .slogan {
@@ -181,8 +185,8 @@ p {
     border-radius: 4px;
 
     color: var(--color-white-text);
-    background-color: var(--accent-color);    
-    
+    background-color: var(--accent-color);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -190,7 +194,7 @@ p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    
+
     cursor: pointer;
 }
 
@@ -225,9 +229,9 @@ p {
     text-transform: uppercase;
 }
 
-.feature-list .feature-text { 
-    color: var(--secondary-text-color); 
-    
+.feature-list .feature-text {
+    color: var(--secondary-text-color);
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -284,8 +288,8 @@ p {
 }
 
 .container-team .photo-team {
-    margin-bottom: 30px;     
- }
+    margin-bottom: 30px;
+}
 
 .container-team .team-name {
     margin-bottom: 10px;
@@ -301,7 +305,7 @@ p {
     margin-bottom: 30px;
 
     color: var(--secondary-text-color);
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
@@ -328,12 +332,13 @@ p {
     margin-bottom: 9px;
     color: var(--color-white-text);
 }
+
 /* Контакты в подвале */
 .contact-in-footer {
     display: block;
     color: var(--contact-in-footer);
-    text-decoration: none; 
-    font-style: normal;   
+    text-decoration: none;
+    font-style: normal;
 }
 
 .contact-in-footer.mail {
@@ -417,7 +422,7 @@ p {
 
 .project-list .name-project {
     color: var(--primary-text-color);
-    
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
