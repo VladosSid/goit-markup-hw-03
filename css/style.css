@@ -83,6 +83,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .container .nav {
@@ -165,7 +168,6 @@ p {
 /* Тело главной страницы */
 /* Превью с заголовком */
 .primery {
-  margin-bottom: 94px;
   padding: 200px 0;
 
   background-color: #2f303a;
@@ -220,7 +222,7 @@ p {
 
 /* Особенности */
 .feature {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 .container .feature-list {
@@ -253,21 +255,29 @@ p {
 
 /* Предоставляемые услуги */
 .services {
-  margin-bottom: 94px;
+  padding: 94px 0;
 }
 
 .services-title {
   margin-bottom: 50px;
 }
 
-.container .container-services {
-  display: flex;
-}
-
 .container-services .services-img:not(:last-child) {
   margin-right: 30px;
 }
 
+.list-services {
+  display: flex;
+}
+
+.list-services .item-services:not(:last-child) {
+  margin-right: 40px;
+}
+
+.img-services {
+  display: block;
+  max-width: 100%;
+}
 /* Наша команда */
 .team {
   padding: 94px 0px;
@@ -279,15 +289,12 @@ p {
   margin-bottom: 50px;
 }
 
-.team-list .container-team {
-  width: 270px;
-  padding-bottom: 30px;
-
-  background-color: var(--color-white-text);
-}
-
 .container .team-list {
   display: flex;
+}
+
+.team-item {
+  background-color: var(--color-white-text);
 }
 
 .team-list .team-item:not(:last-child) {
@@ -295,7 +302,13 @@ p {
 }
 
 .container-team .photo-team {
+  display: block;
+  max-width: 100%;
   margin-bottom: 30px;
+}
+
+.team-list .container-team {
+  padding: 30px 0;
 }
 
 .container-team .team-name {
@@ -345,15 +358,15 @@ p {
 }
 
 .contact-in-footer {
-  display: block;
-  color: var(--contact-in-footer);
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+
+  color: var(--contact-in-footer);
 }
 
-.contact-in-footer.mail {
+.contact-footer-list {
   margin-bottom: 9px;
 }
 
@@ -361,7 +374,7 @@ p {
 /* Тело сайта */
 /* Фильтр */
 .mine-portfolio {
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 .filter {
@@ -406,6 +419,7 @@ p {
 
 /* Список проэктов */
 .project-linck {
+  display: block;
   text-decoration: none;
 }
 
@@ -415,7 +429,6 @@ p {
 }
 
 .project-container {
-  height: 404px;
   width: 370px;
 }
 
@@ -428,16 +441,15 @@ p {
 }
 
 .img-portfolio {
-  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
 }
 
 .class-project {
-  height: 70px;
-
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  margin: 0 24px;
+  justify-content: flex-start;
+  padding: 20px 24px;
 
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -445,8 +457,11 @@ p {
 }
 
 .project-list .name-project {
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
 
+  text-align: start;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
