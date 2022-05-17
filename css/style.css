@@ -84,8 +84,8 @@ p {
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 
 .container .nav {
@@ -101,7 +101,7 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -133,8 +133,8 @@ p {
 
 .menu .link {
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
   text-decoration: none;
