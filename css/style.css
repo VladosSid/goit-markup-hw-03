@@ -293,7 +293,7 @@ p {
   display: flex;
 }
 
-.team-item {
+.team-list .team-item {
   background-color: var(--color-white-text);
 }
 
@@ -301,14 +301,14 @@ p {
   margin-right: 30px;
 }
 
-.container-team .photo-team {
+.team-item .photo-team {
   display: block;
   max-width: 100%;
   margin-bottom: 30px;
 }
 
 .team-list .container-team {
-  padding: 30px 0;
+  padding-bottom: 30px;
 }
 
 .container-team .team-name {
