@@ -304,11 +304,11 @@ p {
 .team-item .photo-team {
   display: block;
   max-width: 100%;
-  margin-bottom: 30px;
 }
 
 .team-list .container-team {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .container-team .team-name {
