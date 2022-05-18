@@ -27,7 +27,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-h2 {
+.title-style {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -72,6 +72,18 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* глобальные параметры картинок */
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* Шапка сайта */
@@ -257,10 +269,6 @@ p {
 }
 
 /* Предоставляемые услуги */
-.services {
-  padding: 94px 0;
-}
-
 .services-title {
   margin-bottom: 50px;
 }
@@ -277,14 +285,8 @@ p {
   margin-right: var(--card-set-gap);
 }
 
-.img-services {
-  display: block;
-  max-width: 100%;
-}
 /* Наша команда */
 .team {
-  padding: 94px 0px;
-
   background-color: #f5f4fa;
 }
 
@@ -302,11 +304,6 @@ p {
 
   flex-basis: calc(100% / 4 - var(--card-set-ga));
   margin-right: var(--card-set-gap);
-}
-
-.team-item .photo-team {
-  display: block;
-  max-width: 100%;
 }
 
 .team-list .container-team {
@@ -357,14 +354,13 @@ p {
 .locatyon {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
-
 .contact-in-footer {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
 
   color: var(--contact-in-footer);
 }
@@ -376,10 +372,6 @@ p {
 /* Стилизация Портфолио */
 /* Тело сайта */
 /* Фильтр */
-.mine-portfolio {
-  padding: 94px 0;
-}
-
 .filter {
   display: flex;
   justify-content: center;
@@ -434,15 +426,9 @@ p {
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-
 .project-linck {
   display: block;
   text-decoration: none;
-}
-
-.img-portfolio {
-  display: block;
-  max-width: 100%;
 }
 
 .class-project {
